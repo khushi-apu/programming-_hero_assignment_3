@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-    
+
     <!-- DaisyUi  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
 
@@ -18,8 +18,99 @@
 
     <!-- font Awesome  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary_color: 'rgb(139, 195, 74)',
+                        another_primary: '#f4f4f4',
+                        body_neutral: 'rgb(51, 51, 51)',
+                        corner_arrow_color:"rgb(171, 239, 95);",
+                        text_customize_color :"rgb(115, 115, 115);",
+                        btn_customize_color:"rgba(171, 239, 95, 0.5);",
+                       
+                    },
+                    fontFamily: {
+                        Manrope: 'Manrope',
+                    },
+                    backgroundImage: {
+                        call_to_action: "url('./assets/bg.jpg')",
+                        testimonials: "url('./images/testimonials.jpg')",
+                    },
+                },
+            },
+        }
+    </script>
 </head>
 <body>
+    
+        <header class="Manrope" >
+
+            <!-- nav bar section starts here -->
+
+
+             <div class="flex">
+              <nav class=" w-11/12  mx-auto">
+                <div class="navbar bg-base-100">
+                  <div class="navbar-start p-0 py-2 ">
+                    <i class="px-2 rounded-full py-1 -rotate-45 bg-corner_arrow_color  text-xl  items-center fa-solid fa-arrow-right"></i>
+                    <h4 class=" text-3xl font-semibold">Rinterio</h4>
+                  </div>
+                  <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 items-center gap-2 text-lg font-medium">
+                      <li class=" font-medium text-base  "><a href="#">Home</a></li>
+                      <li class=" text-text_customize_color text-base"><a href="#">Services</a></li>
+                      <li class=" text-text_customize_color text-base"><a href="#">Portfolio</a></li>
+                      <li class=" text-text_customize_color text-base"><a href="#" >Blogs</a></li>
+                      <li class="text-text_customize_color text-base"><a href="#" >Contact Us</a></li>
+                  </div>
+                  <div class="navbar-end gap-5 items-center  hidden lg:flex ">
+                    
+                    <button class="flex items-center gap-2 font-semibold text-accent ">
+                      <i class="fa-solid fa-magnifying-glass text-black "></i>
+                      <i class="fa-solid fa-cart-shopping text-black  "></i>
+                    </button>
+                    <button class="btn  hover:bg-corner_arrow_color bg-corner_arrow_color w-48 h-12 rounded-3xl">
+                      <p>Book Consult</p>
+                      <i class=" -rotate-45  bg-black rounded-full w-4 h-4  text-white  items-center fa-solid fa-arrow-right"></i>
+
+                    </button>
+                   
+                </div>
+                
+               
+                
+              </nav>
+                <div class=" py-6 lg:hidden px-3">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </div>
+              </div>
+
+            <!-- nav section ends her -->
+
+
+
+            <!-- banner section starts here -->
+            <section class="mt-9 mb-9">
+              <div class="text-center w-11/12 mx-auto ">
+                  <img class="mx-auto" src="./assets/banner.png" alt="duplex_house">
+      
+                  <h1 class="text-4xl  md:text-5xl  font-extrabold ">A barn house of this design has a striking appearance</h1>
+      
+                  <p class="text-text_customize_color mt-5">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+                  <br>
+                  <button class="bg-btn_customize_color px-5 py-2 rounded-full ">View Details
+                      <i class="font-[8px] -rotate-45 p-2 rounded-full ml-1 bg-corner_arrow_color text-white  fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+           </section>
+
+
+          <!-- bannner section ends here  -->
+    </header>
     
 </body>
 </html>
